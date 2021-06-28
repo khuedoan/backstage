@@ -1,9 +1,9 @@
 app:
-  title: Scaffolded Backstage App
+  title: Homelab Dashboard
   baseUrl: http://localhost:3000
 
 organization:
-  name: My Company
+  name: Homelab
 
 backend:
   baseUrl: http://localhost:7000

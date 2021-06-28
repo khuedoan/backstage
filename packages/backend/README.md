@@ -1,18 +1,8 @@
-# example-backend
-
-This package is an EXAMPLE of a Backstage backend.
-
-The main purpose of this package is to provide a test bed for Backstage plugins
-that have a backend part. Feel free to experiment locally or within your fork by
-adding dependencies and routes to this backend, to try things out.
-
-Our goal is to eventually amend the create-app flow of the CLI, such that a
-production ready version of a backend skeleton is made alongside the frontend
-app. Until then, feel free to experiment here!
+# Backstage backend
 
 ## Development
 
-To run the example backend, first go to the project root and run
+To run the backend, first go to the project root and run:
 
 ```bash
 yarn install
@@ -25,10 +15,14 @@ You should only need to do this once.
 After that, go to the `packages/backend` directory and run
 
 ```bash
-AUTH_GOOGLE_CLIENT_ID=x AUTH_GOOGLE_CLIENT_SECRET=x \
-AUTH_GITHUB_CLIENT_ID=x AUTH_GITHUB_CLIENT_SECRET=x \
-AUTH_OAUTH2_CLIENT_ID=x AUTH_OAUTH2_CLIENT_SECRET=x \
-AUTH_OAUTH2_AUTH_URL=x AUTH_OAUTH2_TOKEN_URL=x \
+AUTH_GOOGLE_CLIENT_ID=x \
+AUTH_GOOGLE_CLIENT_SECRET=x \
+AUTH_GITHUB_CLIENT_ID=x \
+AUTH_GITHUB_CLIENT_SECRET=x \
+AUTH_OAUTH2_CLIENT_ID=x \
+AUTH_OAUTH2_CLIENT_SECRET=x \
+AUTH_OAUTH2_AUTH_URL=x \
+AUTH_OAUTH2_TOKEN_URL=x \
 LOG_LEVEL=debug \
 yarn start
 ```
