@@ -1,5 +1,5 @@
 app:
-  title: Homelab Dashboard
+  title: Homelab Backstage
   baseUrl: http://localhost:3000
 
 organization:
@@ -44,8 +44,8 @@ proxy:
 # https://backstage.io/docs/features/techdocs/how-to-guides#how-to-migrate-from-techdocs-basic-to-recommended-deployment-approach
 techdocs:
   builder: 'local' # Alternatives - 'external'
-  generators:
-    techdocs: 'docker' # Alternatives - 'local'
+  generator:
+    runIn: 'docker' # Alternatives - 'local'
   publisher:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
@@ -84,11 +84,11 @@ catalog:
 
     # Backstage example templates
     - type: url
-      target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/sample-templates/react-ssr-template/template.yaml
+      target: https://github.com/backstage/software-templates/blob/main/scaffolder-templates/react-ssr-template/template.yaml
       rules:
         - allow: [Template]
     - type: url
-      target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/sample-templates/springboot-grpc-template/template.yaml
+      target: https://github.com/backstage/software-templates/blob/main/scaffolder-templates/springboot-grpc-template/template.yaml
       rules:
         - allow: [Template]
     - type: url
@@ -96,6 +96,6 @@ catalog:
       rules:
         - allow: [Template]
     - type: url
-      target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/sample-templates/docs-template/template.yaml
+      target: https://github.com/backstage/software-templates/blob/main/scaffolder-templates/docs-template/template.yaml
       rules:
         - allow: [Template]

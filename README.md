@@ -16,6 +16,6 @@ yarn dev
 ### Docker
 
 ```
-docker image build -t homelab-dashboard .
-docker run -it -p 7000:7000 homelab-dashboard
+docker image build -t homelab-backstage .
+docker run -it -p 7000:7000 homelab-backstage
 ```

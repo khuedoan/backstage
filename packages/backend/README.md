@@ -2,7 +2,7 @@
 
 ## Development
 
-To run the backend, first go to the project root and run:
+To run the Backstage backend, first go to the project root and run
 
 ```bash
 yarn install
@@ -15,14 +15,10 @@ You should only need to do this once.
 After that, go to the `packages/backend` directory and run
 
 ```bash
-AUTH_GOOGLE_CLIENT_ID=x \
-AUTH_GOOGLE_CLIENT_SECRET=x \
-AUTH_GITHUB_CLIENT_ID=x \
-AUTH_GITHUB_CLIENT_SECRET=x \
-AUTH_OAUTH2_CLIENT_ID=x \
-AUTH_OAUTH2_CLIENT_SECRET=x \
-AUTH_OAUTH2_AUTH_URL=x \
-AUTH_OAUTH2_TOKEN_URL=x \
+AUTH_GOOGLE_CLIENT_ID=x AUTH_GOOGLE_CLIENT_SECRET=x \
+AUTH_GITHUB_CLIENT_ID=x AUTH_GITHUB_CLIENT_SECRET=x \
+AUTH_OAUTH2_CLIENT_ID=x AUTH_OAUTH2_CLIENT_SECRET=x \
+AUTH_OAUTH2_AUTH_URL=x AUTH_OAUTH2_TOKEN_URL=x \
 LOG_LEVEL=debug \
 yarn start
 ```
@@ -39,7 +35,7 @@ locations to the backend. These are places where the backend can find some
 entity descriptor data to consume and serve. For more information, see
 [Software Catalog Overview - Adding Components to the Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview#adding-components-to-the-catalog).
 
-To get started quickly, this template already includes some statically configured example locations
+To get started quickly, this template already includes some statically configured Backstage locations
 in `app-config.yaml` under `catalog.locations`. You can remove and replace these locations as you
 like, and also override them for local development in `app-config.local.yaml`.
 
