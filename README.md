@@ -1,4 +1,4 @@
-# Homelab Dashboard
+# Homelab Backstage
 
 Powered by [Backstage](https://backstage.io)
 
