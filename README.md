@@ -1,6 +1,7 @@
 # Homelab Backstage
 
 [![CodeQL](https://github.com/khuedoan/homelab-backstage/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/khuedoan/homelab-backstage/actions/workflows/codeql-analysis.yml)
+[![Trivy](https://github.com/khuedoan/homelab-backstage/actions/workflows/trivy-analysis.yml/badge.svg)](https://github.com/khuedoan/homelab-backstage/actions/workflows/trivy-analysis.yml)
 
 Powered by [Backstage](https://backstage.io)
 
