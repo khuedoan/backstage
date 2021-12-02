@@ -1,5 +1,7 @@
 # Homelab Backstage
 
+[![CodeQL](https://github.com/khuedoan/homelab-backstage/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/khuedoan/homelab-backstage/actions/workflows/codeql-analysis.yml)
+
 Powered by [Backstage](https://backstage.io)
 
 ## Development
