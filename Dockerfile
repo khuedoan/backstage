@@ -2,7 +2,7 @@
 # Stage 1: Create yarn install skeleton layer #
 ###############################################
 
-FROM docker.io/node:14-buster-slim AS packages
+FROM docker.io/node:16-buster-slim AS packages
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ RUN find packages \! -name "package.json" -mindepth 2 -maxdepth 2 -exec rm -rf {
 # Stage 2: Install dependencies and build packages #
 ####################################################
 
-FROM docker.io/node:14-buster-slim AS build
+FROM docker.io/node:16-buster-slim AS build
 
 WORKDIR /app
 
@@ -35,7 +35,7 @@ RUN yarn --cwd packages/backend backstage-cli backend:bundle --build-dependencie
 # Stage 3: Build the actual backend image and install production dependencies #
 ###############################################################################
 
-FROM node:14-buster-slim
+FROM node:16-buster-slim
 
 WORKDIR /app
 

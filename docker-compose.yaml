@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  backstage:
+    image: node:16
+    command: "sh -c 'yarn install && yarn dev'"
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"

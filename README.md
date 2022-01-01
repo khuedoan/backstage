@@ -14,6 +14,12 @@ yarn install
 yarn dev
 ```
 
+Or with Docker Compose:
+
+```sh
+docker compose up
+```
+
 ## Deployment
 
 ### Docker
