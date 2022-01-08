@@ -4,8 +4,10 @@ import {
   PluginCacheManager,
   PluginDatabaseManager,
   PluginEndpointDiscovery,
+  TokenManager,
   UrlReader,
 } from '@backstage/backend-common';
+import { PluginTaskScheduler } from '@backstage/backend-tasks';
 
 export type PluginEnvironment = {
   logger: Logger;
@@ -14,4 +16,6 @@ export type PluginEnvironment = {
   config: Config;
   reader: UrlReader;
   discovery: PluginEndpointDiscovery;
+  tokenManager: TokenManager;
+  scheduler: PluginTaskScheduler;
 };

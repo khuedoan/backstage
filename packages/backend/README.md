@@ -26,7 +26,7 @@ yarn start
 Substitute `x` for actual values, or leave them as dummy values just to try out
 the backend without using the auth or sentry features.
 
-The backend starts up on port 7000 per default.
+The backend starts up on port 7007 per default.
 
 ## Populating The Catalog
 
@@ -35,7 +35,7 @@ locations to the backend. These are places where the backend can find some
 entity descriptor data to consume and serve. For more information, see
 [Software Catalog Overview - Adding Components to the Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview#adding-components-to-the-catalog).
 
-To get started quickly, this template already includes some statically configured Backstage locations
+To get started quickly, this template already includes some statically configured example locations
 in `app-config.yaml` under `catalog.locations`. You can remove and replace these locations as you
 like, and also override them for local development in `app-config.local.yaml`.
 

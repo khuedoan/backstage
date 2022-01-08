@@ -20,12 +20,8 @@
     "lint": "lerna run lint --since origin/master --",
     "lint:all": "lerna run lint --",
     "prettier:check": "prettier --check .",
-    "create-plugin": "backstage-cli create-plugin --scope internal --no-private",
+    "create-plugin": "backstage-cli create-plugin --scope internal",
     "remove-plugin": "backstage-cli remove-plugin"
-  },
-  "resolutions": {
-    "graphql-language-service-interface": "2.8.2",
-    "graphql-language-service-parser": "1.9.0"
   },
   "workspaces": {
     "packages": [
@@ -34,25 +30,20 @@
     ]
   },
   "devDependencies": {
-    "@backstage/cli": "^0.7.16",
-    "@spotify/prettier-config": "^11.0.0",
+    "@backstage/cli": "^0.10.5",
+    "@spotify/prettier-config": "^12.0.0",
     "concurrently": "^6.0.0",
     "lerna": "^4.0.0",
     "prettier": "^2.3.2"
   },
   "prettier": "@spotify/prettier-config",
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
       "eslint --fix",
       "prettier --write"
     ],
     "*.{json,md}": [
       "prettier --write"
-    ]
-  },
-  "jest": {
-    "transformModules": [
-      "@asyncapi/react-component"
     ]
   }
 }

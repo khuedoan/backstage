@@ -2,13 +2,22 @@ import React from 'react';
 import { makeStyles, Theme, Grid, List, Paper } from '@material-ui/core';
 
 import { CatalogResultListItem } from '@backstage/plugin-catalog';
+import { DocsResultListItem } from '@backstage/plugin-techdocs';
+
 import {
   SearchBar,
   SearchFilter,
   SearchResult,
+  SearchType,
   DefaultResultListItem,
 } from '@backstage/plugin-search';
-import { Content, Header, Page } from '@backstage/core-components';
+import {
+  CatalogIcon,
+  Content,
+  DocsIcon,
+  Header,
+  Page,
+} from '@backstage/core-components';
 
 const useStyles = makeStyles((theme: Theme) => ({
   bar: {
@@ -16,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   filters: {
     padding: theme.spacing(2),
+    marginTop: theme.spacing(2),
   },
   filter: {
     '& + &': {
@@ -34,10 +44,26 @@ const SearchPage = () => {
         <Grid container direction="row">
           <Grid item xs={12}>
             <Paper className={classes.bar}>
-              <SearchBar debounceTime={100} />
+              <SearchBar />
             </Paper>
           </Grid>
           <Grid item xs={3}>
+            <SearchType.Accordion
+              name="Result Type"
+              defaultValue="software-catalog"
+              types={[
+                {
+                  value: 'software-catalog',
+                  name: 'Software Catalog',
+                  icon: <CatalogIcon />,
+                },
+                {
+                  value: 'techdocs',
+                  name: 'Documentation',
+                  icon: <DocsIcon />,
+                },
+              ]}
+            />
             <Paper className={classes.filters}>
               <SearchFilter.Select
                 className={classes.filter}
@@ -60,6 +86,13 @@ const SearchPage = () => {
                       case 'software-catalog':
                         return (
                           <CatalogResultListItem
+                            key={document.location}
+                            result={document}
+                          />
+                        );
+                      case 'techdocs':
+                        return (
+                          <DocsResultListItem
                             key={document.location}
                             result={document}
                           />
