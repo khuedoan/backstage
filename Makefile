@@ -1,6 +1,6 @@
 .POSIX:
 
-NAME='homelab-backstage'
+NAME='backstage'
 TAG='latest'
 
 default: build

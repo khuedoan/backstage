@@ -18,12 +18,12 @@ jobs:
 
       - name: Build an image from Dockerfile
         run: |
-          docker build -t docker.io/khuedoan/homelab-backstage:${{ github.sha }} .
+          docker build -t docker.io/khuedoan/backstage:${{ github.sha }} .
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@2a2157eb22c08c9a1fac99263430307b8d1bc7a2
         with:
-          image-ref: 'docker.io/khuedoan/homelab-backstage:${{ github.sha }}'
+          image-ref: 'docker.io/khuedoan/backstage:${{ github.sha }}'
           format: 'template'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'
