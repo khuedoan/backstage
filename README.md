@@ -7,24 +7,25 @@ Powered by [Backstage](https://backstage.io)
 
 ## Development
 
-To start the app, run:
+To start the app with Docker Compose:
 
 ```sh
-yarn install
-yarn dev
-```
-
-Or with Docker Compose:
-
-```sh
-docker compose up
+make dev
 ```
 
 ## Deployment
 
-### Docker
+### Build
 
+```sh
+make build
 ```
-docker image build -t backstage .
-docker run -it -p 7000:7000 backstage
+
+### Kubernetes
+
+Use the [Helm chart](https://github.com/khuedoan/charts/tree/master/charts/backstage):
+
+```sh
+helm repo add khuedoan https://khuedoan.github.io/charts
+helm install backstage khuedoan/backstage --namespace backstage
 ```
