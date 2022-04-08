@@ -1,6 +1,5 @@
 .git
 node_modules
-# TODO clean this up
-#packages
-#!packages/backend/dist
-#plugins
+packages
+!packages/backend/dist
+plugins
