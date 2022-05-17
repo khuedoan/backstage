@@ -10,9 +10,9 @@ Powered by [Backstage](https://backstage.io)
 Core:
 
 - [ ] [Authentication](https://backstage.io/docs/auth)
-- [ ] [Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview)
+- [x] [Software Catalog](https://backstage.io/docs/features/software-catalog/software-catalog-overview)
 - [ ] [Software Templates](https://backstage.io/docs/features/software-templates/software-templates-index)
-- [ ] [TechDocs](https://backstage.io/docs/features/techdocs/techdocs-overview)
+- [x] [TechDocs](https://backstage.io/docs/features/techdocs/techdocs-overview)
 - [ ] [Kubernetes](https://backstage.io/docs/features/kubernetes/overview)
 
 Plugins:
