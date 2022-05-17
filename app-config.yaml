@@ -3,7 +3,7 @@ app:
   baseUrl: http://localhost:3000
 
 organization:
-  name: Khue Doan
+  name: Backstage
 
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
@@ -62,7 +62,7 @@ proxy:
 techdocs:
   builder: 'local' # Alternatives - 'external'
   generator:
-    runIn: 'docker' # Alternatives - 'local'
+    runIn: 'local' # Alternatives - 'docker'
   publisher:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
@@ -81,5 +81,5 @@ catalog:
     - allow: [Component, System, API, Group, User, Resource, Location]
   locations:
     # Examples: https://github.com/backstage/backstage/tree/master/packages/catalog-model/examples
-    - type: url
-      target: https://github.com/khuedoan/backstage/blob/master/catalog-info.yaml
+    - type: file
+      target: ../../catalog-info.yaml

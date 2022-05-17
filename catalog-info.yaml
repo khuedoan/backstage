@@ -5,7 +5,7 @@ metadata:
   description: Backstage is an open-source developer portal that puts the developer experience first.
   links:
     - title: Website
-      url: http://backstage.io
+      url: https://backstage.io
     - title: Documentation
       url: https://backstage.io/docs
     - title: Storybook
@@ -13,8 +13,25 @@ metadata:
   annotations:
     github.com/project-slug: khuedoan/backstage
     backstage.io/techdocs-ref: url:https://github.com/backstage/backstage
-    lighthouse.com/website-url: https://backstage.io
 spec:
   type: website
+  owner: khuedoan
+  lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homelab
+  description: Self-hosting infrastructure, fully automated from empty disk to operating services.
+  links:
+    - title: Website
+      url: https://homelab.khuedoan.com
+    - title: Documentation
+      url: https://homelab.khuedoan.com
+  annotations:
+    github.com/project-slug: khuedoan/homelab
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: library
   owner: khuedoan
   lifecycle: experimental

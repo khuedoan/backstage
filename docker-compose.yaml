@@ -3,7 +3,14 @@ version: '3'
 services:
   backstage:
     image: node:16
-    command: "sh -c 'yarn install && yarn dev'"
+    command: |
+      sh -c ' \
+        apt-get update \
+        && apt-get install -y python3 python3-pip \
+        && pip3 install mkdocs-techdocs-core \
+        && yarn install \
+        && yarn dev \
+      '
     working_dir: /app
     volumes:
       - .:/app
