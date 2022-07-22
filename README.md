@@ -3,7 +3,9 @@
 [![CodeQL](https://github.com/khuedoan/backstage/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/khuedoan/backstage/actions/workflows/codeql-analysis.yml)
 [![Trivy](https://github.com/khuedoan/backstage/actions/workflows/trivy-analysis.yml/badge.svg)](https://github.com/khuedoan/backstage/actions/workflows/trivy-analysis.yml)
 
-Powered by [Backstage](https://backstage.io)
+Developer portal for my [homelab](https://github.com/khuedoan/homelab), powered by [Backstage](https://backstage.io)
+
+![](https://user-images.githubusercontent.com/27996771/180509223-ac96970f-01ae-4ae0-bcda-fe911ce232f6.png)
 
 ## Features
 
