@@ -8,14 +8,14 @@ import {
 } from '@backstage/plugin-catalog-react';
 import { TechDocsSearchResultListItem } from '@backstage/plugin-techdocs';
 
+import { SearchType } from '@backstage/plugin-search';
 import {
+  DefaultResultListItem,
   SearchBar,
   SearchFilter,
   SearchResult,
-  SearchType,
-  DefaultResultListItem,
   useSearch,
-} from '@backstage/plugin-search';
+} from '@backstage/plugin-search-react';
 import {
   CatalogIcon,
   Content,
@@ -112,13 +112,15 @@ const SearchPage = () => {
             <SearchResult>
               {({ results }) => (
                 <List>
-                  {results.map(({ type, document }) => {
+                  {results.map(({ type, document, highlight, rank }) => {
                     switch (type) {
                       case 'software-catalog':
                         return (
                           <CatalogSearchResultListItem
                             key={document.location}
                             result={document}
+                            highlight={highlight}
+                            rank={rank}
                           />
                         );
                       case 'techdocs':
@@ -126,6 +128,8 @@ const SearchPage = () => {
                           <TechDocsSearchResultListItem
                             key={document.location}
                             result={document}
+                            highlight={highlight}
+                            rank={rank}
                           />
                         );
                       default:
@@ -133,6 +137,8 @@ const SearchPage = () => {
                           <DefaultResultListItem
                             key={document.location}
                             result={document}
+                            highlight={highlight}
+                            rank={rank}
                           />
                         );
                     }

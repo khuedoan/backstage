@@ -33,19 +33,14 @@ See also: [Plugin Marketplace](https://backstage.io/plugins)
 
 ## Development
 
-To start the app with Docker Compose:
+To start the app:
 
 ```sh
-make dev
+yarn install
+yarn dev
 ```
 
 ## Deployment
-
-### Build
-
-```sh
-make build
-```
 
 ### Kubernetes
 

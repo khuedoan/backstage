@@ -1,8 +1,18 @@
-# Backstage backend
+# example-backend
+
+This package is an EXAMPLE of a Backstage backend.
+
+The main purpose of this package is to provide a test bed for Backstage plugins
+that have a backend part. Feel free to experiment locally or within your fork by
+adding dependencies and routes to this backend, to try things out.
+
+Our goal is to eventually amend the create-app flow of the CLI, such that a
+production ready version of a backend skeleton is made alongside the frontend
+app. Until then, feel free to experiment here!
 
 ## Development
 
-To run the Backstage backend, first go to the project root and run
+To run the example backend, first go to the project root and run
 
 ```bash
 yarn install

@@ -1,12 +1,7 @@
 .POSIX:
 
-NAME='backstage'
-TAG='latest'
-
-default: build
-
-build:
-	docker image build --tag ${NAME}:${TAG} .
+default: dev
 
 dev:
-	docker compose up
+	yarn install
+	yarn dev
