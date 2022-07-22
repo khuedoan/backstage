@@ -18,7 +18,7 @@ Core:
 Plugins:
 
 - [ ] [API Docs](https://github.com/backstage/backstage/blob/master/plugins/api-docs/README.md)
-- [ ] [ArgoCD](https://roadie.io/backstage/plugins/argo-cd/?utm_source=backstage.io&utm_medium=marketplace&utm_campaign=argo-cd)
+- [x] [ArgoCD](https://roadie.io/backstage/plugins/argo-cd/?utm_source=backstage.io&utm_medium=marketplace&utm_campaign=argo-cd)
 - [ ] [Badges](https://github.com/backstage/backstage/blob/master/plugins/badges/README.md)
 - [ ] [Catalog Graph](https://github.com/backstage/backstage/blob/master/plugins/catalog-graph/README.md)
 - [ ] [Configuration as Data](https://github.com/GoogleContainerTools/kpt-backstage-plugins/tree/main/plugins/cad)
@@ -37,6 +37,9 @@ To start the app:
 
 ```sh
 yarn install
+
+export ARGOCD_AUTH_TOKEN='argocd.token=<TOKEN>'
+
 yarn dev
 ```
 
