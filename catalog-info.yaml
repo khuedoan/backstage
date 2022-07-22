@@ -77,7 +77,7 @@ metadata:
       url: https://homelab.khuedoan.com
   annotations:
     github.com/project-slug: khuedoan/homelab
-    backstage.io/techdocs-ref: url:https://github.com/khuedoan/homelab/tree/mkdocs
+    backstage.io/techdocs-ref: url:https://github.com/khuedoan/homelab
 spec:
   type: library
   owner: khuedoan
