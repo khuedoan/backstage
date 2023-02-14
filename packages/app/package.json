@@ -11,7 +11,7 @@
     "@backstage/catalog-model": "^1.1.0",
     "@backstage/cli": "^0.18.0",
     "@backstage/core-app-api": "^1.0.4",
-    "@backstage/core-components": "^0.10.0",
+    "@backstage/core-components": "^0.12.4",
     "@backstage/core-plugin-api": "^1.0.4",
     "@backstage/integration-react": "^1.1.2",
     "@backstage/plugin-api-docs": "^0.8.7",
